@@ -634,7 +634,17 @@ nav {
 	background: url(../img/map-big.png);
 }
 
+.contact-address {
+	position: absolute;
+	top: 86px;
+	left: 161px;
 
+	box-sizing: border-box;
+	width: 240px;
+	padding: 14px 21px;
+
+	background: #fff;
+}
 
 
 
