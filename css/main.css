@@ -646,9 +646,43 @@ nav {
 	background: #fff;
 }
 
+.uppercase {
+	display: block;
+	margin-bottom: 17px;
 
+	text-transform: uppercase;
+}
 
+.btn-contacts {
+	width: 195px;
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
 
+.btn-contacts:hover {
+	background: #d6494d;
+}
+
+.btn-contacts:active {
+	background: #b63538;
+}
+
+.discounts {
+	float: right;
+	width: 564px;
+}
+
+.discounts h1 {
+	margin-bottom: 0;
+
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+.discounts p {
+	margin-top: 9px;
+}
 
 
 
