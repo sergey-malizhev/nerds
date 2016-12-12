@@ -684,6 +684,73 @@ nav {
 	margin-top: 9px;
 }
 
+.social-icons {
+	float: left;
+	width: 305px;
+	margin-top: 27px;
+	margin-left: 9px;
+}
+
+.social-buttons a {
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 60px;
+	height: 60px;
+	margin-right: 25px;
+
+	font: 0/0 Roboto,sans-serif;
+	text-align: center;
+	text-decoration: none;
+
+	background: #e1e1e1;
+	border-radius: 50%;
+}
+
+.social-buttons a:hover {
+	background: #fb565a;
+}
+
+.social-buttons a:active {
+	background: #d6494d;
+}
+
+.icon-vk:before {
+	content: "\76";
+
+	margin-top: 20px;
+
+	font-size: 24px;
+	line-height: 16px;
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.icon-facebook:before {
+	content: "\66";
+
+	margin-top: 20px;
+
+	font-size: 24px;
+	line-height: 16px;
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.icon-instagram:before {
+	content: "📷";
+
+	margin-top: 20px;
+
+	font-size: 24px;
+	line-height: 16px;
+	text-decoration: none;
+
+	color: #fff;
+}
+
 
 
 
