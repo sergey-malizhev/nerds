@@ -592,7 +592,7 @@ nav {
 .friend-2 {
 	display: block;
 	width: 199px;
-	height: 50px;
+	height: 68px;
 	margin: auto;
 	margin-top: -7px;
 
@@ -751,6 +751,21 @@ nav {
 	color: #fff;
 }
 
+.login-popup {
+	position: fixed;
+	top: 26px;
+	left: 50%
+	z-index: 1000;
 
+	display: none;
+	width: 630px;
+	min-height: 200px;
+	margin-left: -315px;
+	padding: 50px 81px;
+
+	background: #fff;
+	box-shadow: 0 27px 78px -5px #000;
+	box-sizing: border-box;
+}
 
 
