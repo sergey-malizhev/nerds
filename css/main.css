@@ -751,6 +751,38 @@ nav {
 	color: #fff;
 }
 
+@-webkit-keyframes login-open {
+	0% {
+		-webkit-transform: translateY(-2000px);
+	}
+
+	70% {
+		-webkit-transform: translateY(30px);
+	}
+
+	90% {
+		-webkit-transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0px);
+	}
+}
+
+@-webkit-keyframes login-error {
+	0%,100% {
+		-webkit-transform: translateX(0px);
+	}
+
+	10%,30%,50%,70%,90% {
+		-webkit-transform: translateX(-10px);
+	}
+
+	20%,40%,60%,80% {
+		-webkit-transform: translateX(10px);
+	}	
+}
+
 .login-popup {
 	position: fixed;
 	top: 26px;
@@ -767,5 +799,52 @@ nav {
 	box-shadow: 0 27px 78px -5px #000;
 	box-sizing: border-box;
 }
+
+.login-popup-show {
+	display: block;
+
+	-webkit-animation: login-open .4s;
+}
+
+.login-popup-error {
+	-webkit-animation: login-error .6s;
+}
+
+.login-form {
+	margin-top: 4px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.login-form input[type="text"],.login-form input[type="email"],..login-form input[type="submit"],.login-form texterea {
+	display: inline-block;
+	box-sizing: border-box;
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	font-family: 'Roboto',sans-serif;
+
+	text-transform: uppercase;
+
+	border-radius: 5px;
+}
+
+.login-form input[type="text"],.login-form input[type="email"] {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 220px;
+	margin-bottom: 24px;
+	padding: 8px 15px;
+
+	color: #000;
+	background-color: #f9f6f3;
+	border: 2px solid #d7dcde;
+}
+
+
+
 
 
