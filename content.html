@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nerd's</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,300,100&subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/symbols-nerds-embedded.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="layout-center-wrapper">
+			<a class="logo" href="#">Nёrd's</a>
+
+			<nav>
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a class="active" href="index.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>		
+
+			<div class="cart-menu">
+				<a class="cart-menu-enter icon-basket" href="#">Корзина</a>			
+			</div>
+
+			<div class="header-title">
+				Добро пожаловать в магазин<br>
+				готовых макетов
+			</div>
+		</div>
+	</header>
+
+	<main class="layout-center-wrapper clearfix">
+		<form action="/echo" class="form" method="post">
+			<div class="h2">
+				Стоимость:
+			</div>
+
+			<div class="range-filter">
+				<div class="range-controls">
+					<div class="scale">
+						<div class="bar" style="width: 75%;"></div>
+					</div>
+
+					<div class="toggle min-toggle"></div>
+
+					<div class="toggle max-toggle"></div>
+				</div>
+
+				<div class="price-controls">
+					от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15 000">
+				</div>
+			</div>
+
+			<div class="h2">
+				Сетка:
+			</div>
+
+			<div class="filter">
+				<input checked id="adaptive" type="radio" name="group">
+				<label class="icon-circle" for="adaptive">Адаптивная</label>
+			</div>
+
+			<div class="filter">
+				<input id="fixed" type="radio" name="group">
+				<label class="icon-circle" for="fixed">Фиксированная</label>
+			</div>
+
+			<div class="filter">
+				<input id="strench" type="radio" name="group">
+				<label class="icon-circle" for="strench">Резиновая</label>
+			</div>
+
+		</form>
+	</main>
+
+</body>
+</html>
