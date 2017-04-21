@@ -48,7 +48,7 @@ body {
 	height: 56px;
 	margin-left: 10px;
 
-	font: 0/0 Roboto, sans-serif;
+	font: 0/0 'Roboto', sans-serif;
 }
 
 nav {
@@ -872,17 +872,19 @@ nav {
 }
 
 .login-form input[type="submit"] {
+	display: inline-block;
 	min-width: 220px;
 	height: 40px;
 	margin-top: 44px;
 	margin-left: 16px;
+	margin-right: 0;
 	padding: 0 30px;
 
 	font-size: 12px;
 	line-height: 40px;
 	text-transform: uppercase;
-
 	color: #fff;
+
 	background-color: #fb565a;
 	border: none;
 	border-radius: 5px;

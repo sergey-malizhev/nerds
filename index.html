@@ -140,12 +140,15 @@
 
 	<footer class="page-footer">
 		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.5668403167365!2d28.421047415476707!3d49.22774137932542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c64280230df%3A0xee7abfb6bdaa024a!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjyDQn9C-0YDQuNC60LAsIDcsINCS0ZbQvdC90LjRhtGPLCDQktGW0L3QvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCAyMTAwMA!5e0!3m2!1sru!2sru!4v1492528527578" width="1200" height="415" frameborder="0" 
+			style="border:0" allowfullscreen>				
+			</iframe>
 			<div class="contact-address">
 				<p><span class="uppercase"><strong>Nёrds</strong> Design Studio</span>
-				350000, Винница,<br>
-				ул. Головатого, 147</p>
+				21021, Винница,<br>
+				ул. В.Порика, 7</p>
 				<p>тел. +8(0432)35-75-75</p>
-				<a class="btn btn-contacts" href="">Напишите нам</a>
+				<a class="btn btn-contacts" href="#">Напишите нам</a>
 			</div>
 		</div>
 
@@ -189,44 +192,44 @@
 	</div>
 	<script>
 
-  var link = document.querySelector('.btn-contacts');
-  var popup = document.querySelector('.login-popup');
-  var close = popup.querySelector('.cancel');
-  var form = popup.querySelector('form');
-  var login = form.querySelector('.login-field');
-  var password = form.querySelector('.password-field');
-  var storage = localStorage.getItem('login');
+  	var link = document.querySelector('.btn-contacts');
+  	var popup = document.querySelector('.login-popup');
+  	var close = popup.querySelector('.cancel');
+  	var form = popup.querySelector('form');
+  	var login = form.querySelector('.login-field');
+  	var password = form.querySelector('.password-field');
+  	var storage = localStorage.getItem('login');
 
-  link.addEventListener('click', function(event) {
-    event.preventDefault();
-    popup.classList.add('login-popup-show');
-    if (storage) {
-      login.value = storage;
-      password.focus();
-    } else {
-      login.focus();
-    }
-  }, false);
+  	link.addEventListener('click', function(event) {
+    	event.preventDefault();
+   	 popup.classList.add('login-popup-show');
+    	if (storage) {
+      		login.value = storage;
+      		password.focus();
+    	} else {
+      		login.focus();
+   		}
+  	}, false);
 
-  close.addEventListener('click', function(event) {
-    event.preventDefault();
-    popup.classList.remove('login-popup-show');
-  }, false);
+  	close.addEventListener('click', function(event) {
+    	event.preventDefault();
+    	popup.classList.remove('login-popup-show');
+  	}, false);
 
-  form.addEventListener('submit', function(event) {
-    if (!login.value || !password.value) {
-      event.preventDefault();
-      popup.classList.add('login-popup-error');
-    } else {
-      localStorage.setItem('login', login.value);
-    }
-  }, false);
+  	form.addEventListener('submit', function(event) {
+    	if (!login.value || !password.value) {
+      		event.preventDefault();
+      		popup.classList.add('login-popup-error');
+    	} else {
+      	localStorage.setItem('login', login.value);
+    	}
+  	}, false);
 
-  window.addEventListener('keydown', function(event) {
-    if (event.keyCode == 27 && popup.classList.contains('login-popup-show')) {
-      popup.classList.remove('login-popup-show');
-    }
-  }, false);
+  	window.addEventListener('keydown', function(event) {
+    	if (event.keyCode == 27 && popup.classList.contains('login-popup-show')) {
+      		popup.classList.remove('login-popup-show');
+    	}
+  	}, false);
 
   </script>
 </body>
